@@ -1,20 +1,13 @@
 package net.thucydides.showcase.junit.features.cart;
 
-import net.serenitybdd.junit.runners.SerenityRunner;
-import net.thucydides.core.annotations.Managed;
+import org.junit.Test;
+
+import io.openbdt.support.Feature;
 import net.thucydides.core.annotations.Steps;
-import net.thucydides.core.annotations.WithTag;
-import net.thucydides.core.annotations.WithTags;
 import net.thucydides.showcase.junit.model.ListingItem;
 import net.thucydides.showcase.junit.steps.serenity.BuyerSteps;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.openqa.selenium.WebDriver;
 
-@RunWith(SerenityRunner.class)
-public class AddItemsToCartTest {
-    @Managed
-    WebDriver driver;
+public class AddItemsToCartTest extends Feature{
 
     @Steps
     BuyerSteps buyer;
