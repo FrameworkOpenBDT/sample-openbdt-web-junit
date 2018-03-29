@@ -2,7 +2,6 @@ package net.thucydides.showcase.junit.steps;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.test.context.ContextConfiguration;
 
 import io.openbdt.element.WebBrowserScreenElement;
@@ -10,7 +9,6 @@ import net.thucydides.core.annotations.Step;
 import net.thucydides.showcase.junit.pages.GoogleLoginPage;
 
 @ContextConfiguration("/context.xml")
-@Component
 public class GoogleLoginSteps {
 
 	private GoogleLoginPage loginPage;

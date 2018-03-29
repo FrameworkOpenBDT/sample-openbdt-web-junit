@@ -2,11 +2,9 @@ package net.thucydides.showcase.junit.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.springframework.stereotype.Component;
 
 import net.serenitybdd.core.pages.PageObject;
 
-@Component
 public class GoogleSearchPage extends PageObject{
 
 	@FindBy(id = "lst-ib")
